@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+    font-family: Raleway; 
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.75rem;
+}
+
+.box{
+    flex: 1;
+    margin: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.box-photo{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.box-texte{
+    width: 100%;
+    background-color: white;
+    padding: 7.5%;
+}
+
+img{
+    width: 100%;
+}
+
+.box-date{
+    background-color: teal;
+    margin: 5%;
+    width: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.jour{
+    background-color:#1abc9c;
+}
+
+.mois{
+    background-color: #117964;
+}
+
+#box-2{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button{
+    height: 5vh;
+    padding: 0 15%;
+    background-color: #1abc9c;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 5%;
+}
+
+button:hover{
+    background-color: #ac203f;
+}
+
+/* "> :first-child" permet de séléctionner toutes les premières balises filles directes de .box */
+.box:hover > :first-child{
+transform: scale(1.1);
+transition: all 0.75s ease-out;
+}
